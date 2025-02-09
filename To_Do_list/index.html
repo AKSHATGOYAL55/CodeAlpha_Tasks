@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List akshat</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+    <div class="container">
+        <h2>To-Do List</h2>
+        <input type="text" id="taskInput" placeholder="Enter a task">
+        <select id="statusInput">
+            <option value="To-Do">To-Do</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Incomplete">Incomplete</option>
+            <option value="Complete">Complete</option>
+        </select>
+        <button onclick="addTask()">Add Task</button>
+    </div>
+
+    <div class="task-section">
+        <h3>To-Do</h3>
+        <ul id="todoList"></ul>
+    </div>
+    <div class="task-section">
+        <h3>In Progress</h3>
+        <ul id="progressList"></ul>
+    </div>
+    <div class="task-section">
+        <h3>Incomplete</h3>
+        <ul id="incompleteList"></ul>
+    </div>
+    <div class="task-section">
+        <h3>Complete</h3>
+        <ul id="completeList"></ul>
+    </div>
+    <div class="footer">Created by <b>Akshat Goyal</b></div>
+
+
+</body>
+<script src="To_do.js"></script>
+</html>
